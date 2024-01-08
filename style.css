@@ -100,3 +100,40 @@ h1{
     width: 27ch;
     font-size: 1rem;
 }
+
+@media (min-width: 1440px) {
+    body{
+        
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "header stars"
+        "reviews reviews"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    header{
+        grid-area: header;
+    }
+    main{
+        display: contents;
+    }
+    .ratings{
+        grid-area: stars;
+    }
+    .user-reviews-block{
+        grid-area: reviews;
+        display: flex;
+        justify-content: space-between;
+    }
+    .review-card{
+        max-width: 17.2rem;
+        padding: 2.25em 2em;
+        
+    }
+    .review-p{
+        width: auto;
+    }
+}
