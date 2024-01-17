@@ -103,6 +103,12 @@ h1{
 
 @media (min-width: 1440px) {
     body{
+        background: none;
+        background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left top, right bottom;
+        margin: 6rem 11rem 0 11rem;
+
         
     }
     .container{
@@ -116,6 +122,8 @@ h1{
     }
     header{
         grid-area: header;
+        align-items: start;
+        text-align: start;
     }
     main{
         display: contents;
